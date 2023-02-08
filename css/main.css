@@ -1,0 +1,343 @@
+@font-face {
+	font-family: nlight;
+	src: url(NexaLight.otf);
+}
+@font-face {
+	font-family: nbold;
+	src: url(NexaBold.otf);
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: nlight;
+}
+
+html{
+	margin: 0px;
+	height: 100%;
+
+	
+}
+html:before{
+  content:'';
+  position:absolute;
+  z-index:-1;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height: 100%;
+  background:url("../images/cover2.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+  filter:blur(4px);
+  background-size:100vw auto;
+  /* makup ? */
+  box-shadow:inset 0 0 0 50vw rgba(255,255,255,0.2)
+}
+
+.clearfix{
+	height: 40px;
+}
+
+.bloglinks {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  background-color: #ce0adf2e;
+  padding: 5px;
+  line-height: 14px;
+  font-size: 12px;
+  border-radius: 2px;
+  text-shadow: 1px 1px 2px #00000078;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 2px;
+  box-shadow: 0px 0px 10px #00000054;
+  transition: 0.3s;
+  animation: ease-in;
+}
+
+.bloglinks:hover {
+  background-color: #d60fe87d;
+  padding: 5px;
+  line-height: 14px;
+  font-size: 13px;
+  border-radius: 2px;
+  text-shadow: 1px 1px 2px #00000078;
+  display: inline-block;
+  margin-bottom: 2px;
+  transition: 0.3s;
+  animation: ease-in;
+}
+
+.bgimage{
+	margin: 0px;
+	background-image: url("../images/cover2.jpg");
+	height: 100%; 
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgtext {
+	float: left;
+}
+
+.logoicontop{
+  border-radius: 50%;
+  border: 3px solid white;
+  height: 62px;
+  padding: 2px;
+  position: fixed;
+  z-index: 9999;
+  overflow: visible;
+  background: linear-gradient(to left top, #34039d, #d75a9c);
+  margin-top: 11px;
+  margin-left: 20px;
+}
+
+.headnamecontainer {
+  display: table-cell;
+  font-family: nexa light;
+  font-synthesis: style;
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  width: 42%;
+  padding: 21px;
+  margin-top: 8%;
+  vertical-align: text-bottom;
+  height: 342px;
+  padding-left: unset;
+}
+
+.headnamecontainer_1 {
+  display: table-cell;
+  font-family: nexa light;
+  font-synthesis: style;
+  background-color: rgba(184, 6, 234, 0.65);
+  color: white;
+  font-weight: bold;
+  width: 42%;
+  padding: 21px;
+  padding-left: 21px;
+  margin-top: 8%;
+  vertical-align: text-bottom;
+  height: 342px;
+  padding-left: unset;
+}
+
+.skillcontainer {
+  display: table-cell;
+  font-family: nexa light;
+  font-synthesis: style;
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  width: 42%;
+  padding: 21px;
+  margin-top: 8%;
+  vertical-align: text-bottom;
+  height: 342px;
+  padding-left: unset;
+}
+
+.namehead {
+	letter-spacing: 3px;
+	font-family: nlight;
+	font-size: 60px;
+}
+
+.thishead {
+	letter-spacing: 3px;
+	font-family: nlight;
+	font-size: 20px;
+}
+
+.parentdetail{
+	letter-spacing: 1px;
+	font-family: nlight;
+	font-size: 14px;		
+	word-wrap: break-word;
+}
+
+.profilephoto{
+    border-radius: 50%;
+    border: 8px solid #fff;
+    /* width: 25%; */
+	height: 237px;
+	transition: 0.7s;
+}
+.profilephoto:hover {
+	border: 8px solid #d98eff;
+	transition: 0.7s;
+	box-shadow: 0 10px 10px -4px #662d8c,0 15px 30px 4px rgba(207,0,255,.5),0 7px 7px -1px #2b0950,0 1px 1px 0 rgba(207,0,255,.5),inset 0 0 8px 0 #ff005b;
+}
+
+@media screen and (max-width: 600px) {
+	.profilephoto{
+		margin-bottom: 21px;
+	}
+}
+
+
+
+
+/* CSS */
+.button-10 {
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: 0.9s;
+}
+
+
+.button-10:disabled {
+	color: #ddd;
+	background: linear-gradient(180deg, #2E3237 0%, #686868 100%);
+	transition: 0.9s;
+}
+
+
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  4%, 100% {  text-shadow: none; transform: none; }
+}
+
+/* Top navigation */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  z-index: 5;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: nbold;
+  text-shadow: 1px 2px 0px rgba(0, 255, 231, 0.57);
+  background-color: #510044;
+}
+
+.active {
+  background: linear-gradient(#f70cbc, #73009d);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: nbold;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: #581cb0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+  transform-origin: bottom;
+  animation-name: glitch;
+  background-image: linear-gradient(#f700ff,#7e2dc1,#0d8c93);
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: white;
+  background-image: linear-gradient(#071033, #ca0084);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
